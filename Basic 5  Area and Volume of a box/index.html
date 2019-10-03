@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic 5 | Area and Volume of a box</title>
+	<script type="text/javascript" src="main.js"></script>
+</head>
+<body>
+<script>
+    var $ = function(id) {
+        return document.getElementById(id);
+    };
+
+    // var length = $("length");
+    // var width = $("width");
+    // var height = $("height");
+
+    var amountVolume = 0;
+    function calculateVolume(length, width, height) {
+
+        console.log(length,width,height);
+        amountVolume = parseFloat(length) * parseFloat(width) * 
+    parseFloat(height);
+    var volumeRound = amountVolume.toFixed(2);
+        $('volume').value = volumeRound;
+    };
+
+    </script>
+    <div id="wrapper">
+    <form>
+    <h1>Surface Area & Volume</h1>
+
+    <p>Length:
+
+    <input type="text" id="length" value="0"/>
+
+    </p>
+    <br />
+    <p>Width:
+
+        <input type="text" id="widthData" value="0"/>
+
+    </p>
+    <br />
+    <p>Height:
+
+        <input type="text" id="heightData" value="0"/>
+
+    </p>
+    <br />
+    <p class="change">Surface Area:
+
+        <input type="text" id="area" disabled="disabled" />
+    </p>
+    <br />
+    <p class="volume">Volume:
+
+        <input type="text" id="volume" disabled="disabled" />
+    </p>
+    <br />
+    <input type="button" id="calculate" onClick="calculateVolume(length.value, widthData.value, heightData.value)" value="Calculate Volume"/>
+   </form>
+  </div>
+
+
+</body>
+</html>

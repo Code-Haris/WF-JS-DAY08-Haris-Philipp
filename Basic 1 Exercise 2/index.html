@@ -5,11 +5,13 @@
 	<script src="main.js"></script>
 </head>
 <body>
-	<input id="own" type="number" name="TEXT" value="">
+	<p id="resultBday"></p>
+<input type="date" name="bday" id="bday" onchange="submitBday()">
+	<!--<input id="own" type="number" name="TEXT" value="">
  	<button type="Button" onclick="getAge()">click</button>
 
 
-<!--<script>
+<script>
 	function ageCalculator(){
 		var age= document.getElementById("own").innerHTML;
 		var age1= new Date().getFullYear();

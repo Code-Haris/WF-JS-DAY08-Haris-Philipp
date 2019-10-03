@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advan 2</title>
+</head>
+
+<body>
+    <input id="degree" type="number" name="TEXT" value="">
+    <button type="Button" onclick="degreeCalculator()">click</button>
+    <script>
+    function degreeCalculator() {
+        var hours = Math.floor(document.getElementById("degree").value / 60);
+        var minutes = document.getElementById("degree").value % 60;
+        document.write(hours + " hours and " + minutes + "minutes");
+        var yesterday = new Date(new Date().setDate(new Date().getDate() - 1));
+        document.write("<br>" + yesterday);
+
+
+
+
+    }
+
+    var date = new Date();
+    date.setDate(date.getDate() - 1);
+    console.log(date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear());
+    </script>
+</body>

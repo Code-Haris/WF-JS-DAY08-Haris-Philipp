@@ -19,7 +19,7 @@ function myFunction() {
 	
 </script> -->
 
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 
 
 	var fruits = ["Apple", "Banana", "Kiwi"];
@@ -29,6 +29,22 @@ function myFunction() {
   fruits.pop("Orange");
   document.getElementById("demo").innerHTML = fruits;
 }
+
+</script>
+ -->
+<script type="text/javascript">
+	
+
+	var fruits = ["Apple" +'<br>', "Banana" + '<br>', "Kiwi" + '<br>'];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+  fruits.push("Orange");
+  document.getElementById("demo").innerHTML = fruits;
+}
+
+
+
 
 </script>
 </body>

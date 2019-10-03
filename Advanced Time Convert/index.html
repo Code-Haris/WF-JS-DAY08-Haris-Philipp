@@ -24,5 +24,32 @@
     var date = new Date();
     date.setDate(date.getDate() - 1);
     console.log(date.getDate() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear());
+
+    a = Math.floor((Math.random() * 255) + 1);
+    b = Math.floor((Math.random() * 255) + 1);
+    c = Math.floor((Math.random() * 255) + 1);
+    document.body.style.backgroundColor = 'rgb(' + [a, b, c].join(',') + ')';
+    
+
+    var multi = [
+        ["Vienna", "", "", "", ""],
+        ["", " is ", "", "", ""],
+        ["", "", "a", "", ""],
+        ["", "", "", " nice ", ""],
+        ["", "", "", "", "city"]
+    ];
+    var str ="";
+    for (var i = 0; i < multi.length; i++) {
+        for (j = 0; j < multi[i].length; j++) {
+          if (multi[i][j] == null){
+              
+          }else{
+            str += multi[i][j];
+       
+          }
+        }
+    }
+
+    console.log(str);
     </script>
 </body>

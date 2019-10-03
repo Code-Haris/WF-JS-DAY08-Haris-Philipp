@@ -8,6 +8,8 @@
 <body>
     <input id="degree" type="number" name="TEXT" value="">
     <button type="Button" onclick="degreeCalculator()">click</button>
+    <p id="p1">Properties,$a$set$of$immutable$values,$are$passed$to$a$component's$renderer$as$properties$in$its $HTML$tag.$A$component$cannot$directly$modify$any$properties$passed$to$it,$but$can$be$passed$ callback$functions$that$do$modify$values.$This$mechanism's$promise$is$expressed$as$"properties $flow$down;$actions$flow$up".</p>
+    <button type="Button" onclick="delet()">click</button>
     <script>
     function degreeCalculator() {
         var hours = Math.floor(document.getElementById("degree").value / 60);
@@ -15,6 +17,9 @@
         document.write(hours + " hours and " + minutes + "minutes");
         var yesterday = new Date(new Date().setDate(new Date().getDate() - 1));
         document.write("<br>" + yesterday);
+
+
+
 
 
 
@@ -29,7 +34,7 @@
     b = Math.floor((Math.random() * 255) + 1);
     c = Math.floor((Math.random() * 255) + 1);
     document.body.style.backgroundColor = 'rgb(' + [a, b, c].join(',') + ')';
-    
+
 
     var multi = [
         ["Vienna", "", "", "", ""],
@@ -38,18 +43,39 @@
         ["", "", "", " nice ", ""],
         ["", "", "", "", "city"]
     ];
-    var str ="";
+    var str = "";
+
     for (var i = 0; i < multi.length; i++) {
         for (j = 0; j < multi[i].length; j++) {
-          if (multi[i][j] == null){
-              
-          }else{
-            str += multi[i][j];
-       
-          }
+            if (multi[i][j] == null) {
+
+            } else {
+                str += multi[i][j];
+
+            }
         }
     }
 
     console.log(str);
+
+    var str1 = document.getElementById("p1").innerHTML;
+
+    function delet() {
+        var doll = "$";
+/*
+       for (var i = 0; i < str1.length; i++) {
+             if(str1.charAt(i)== "$"){
+             str1.replace("$", " ");
+           }
+ 
+*/
+
+    var str2 = str1.split("$").join(" ");  
+      console.log(str2);
+      document.getElementById("p1").innerHTML = str2;
+
+    }
+  
+
     </script>
 </body>

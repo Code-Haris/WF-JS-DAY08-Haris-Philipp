@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Degree-Radian</title>
+</head>
+<body>
+	<input id="degree" type="number" name="TEXT" value="">
+ 	<button type="Button" onclick="degreeCalculator()">click</button>
+
+
+<script>
+	function degreeCalculator(){
+		var degree= document.getElementById("degree").value;
+		var calc = degree *Math.PI/180;
+		document.write(calc);
+
+}
+</script>
+</body>
+</html>

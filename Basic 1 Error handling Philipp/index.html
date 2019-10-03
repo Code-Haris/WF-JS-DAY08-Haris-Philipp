@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+   <title>Error</title>
+
+</head>
+
+<body>
+
+   <p id='message'></p>
+
+   
+
+   <script type="text/javascript">
+	try{
+		
+    var person = prompts("Please enter your name", "Harry Potter");
+    document.getElementById("message").innerHTML ="Hello " + person + "! How are you today?";
+	}
+	catch (err){
+	document.write("An error has occurred...The" +err  +"must be fixed");   
+
+    
+    }
+	
+   </script>
+
+</body>
+
+</html>

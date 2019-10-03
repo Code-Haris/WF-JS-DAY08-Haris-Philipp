@@ -2,27 +2,23 @@
 <html>
 <head>
 	<title>Basic 2 - Part 2</title>
-	<script src="main.js"></script>
 </head>
 <body>
 	<input id="own" type="number" name="TEXT" value="">
- 	<button type="Button" onclick="getAge()">click</button>
+ 	<button type="Button" onclick="ageCalculator()">click</button>
 
 
-<!--<script>
+<script>
 	function ageCalculator(){
-		var age= document.getElementById("own").innerHTML;
+		var age= document.getElementById("own").value;
 		var age1= new Date().getFullYear();
 		var calc= age1 - age;
 		var calc1= age1 - age - 1;
 		Math.floor(age1, age / (1000*60*60*24*365.25));
 		document.write("You are either " + calc1 +" or " + calc);
 		alert("You are either " + calc1 +" or " + calc);
-		console.log(age);
+		console.log(age);}
 
-
-		
-	}-->
 </script>
 </body>
 </html>

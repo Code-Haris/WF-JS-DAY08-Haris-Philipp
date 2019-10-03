@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+   <title>Error</title>
+
+</head>
+
+<body>
+<p>Click the button to upperCase first Letter of the next paragraph.</p>
+<p id = "upper">i am a web developer</p>
+<button onclick="myFunction()">Try it</button>
+   <p id=''></p>
+
+   
+
+   <script>
+	
+	function myFunction() {
+  var str = "i am a web developer";
+  var res = str.charAt(0).toUpperCase() + str.slice(1);
+  document.getElementById("upper").innerHTML = res;
+}
+   </script>
+
+</body>
